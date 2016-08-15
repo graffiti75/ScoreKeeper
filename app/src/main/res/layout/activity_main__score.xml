@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:weightSum="3">
+
+    <TextView
+        style="@style/ScoreTextView"
+        android:layout_marginRight="3dp"
+        android:text="@string/score" />
+
+    <TextView
+        android:id="@+id/id_home__score_text_view"
+        style="@style/ScoreTextView"
+        android:layout_marginRight="3dp"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/id_away__score_text_view"
+        style="@style/ScoreTextView"
+        android:text="0" />
+</TableRow>

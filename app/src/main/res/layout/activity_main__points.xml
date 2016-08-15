@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:gravity="center_vertical"
+    android:weightSum="3">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="1"
+        android:background="@color/grey_400"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Points"
+        android:textColor="@color/white"
+        android:textSize="28sp" />
+
+    <!--=============== FIRST COLUMN ===============-->
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="3dp"
+        android:layout_weight="1"
+        android:background="@color/grey_300"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <TableLayout style="@style/PointsTableLayout">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/id_home__plus_one_text_view"
+                    style="@style/PlusButton"
+                    android:layout_marginRight="1dp"
+                    android:text="+1" />
+
+                <Button
+                    android:id="@+id/id_home__plus_two_text_view"
+                    style="@style/PlusButton"
+                    android:layout_marginRight="1dp"
+                    android:text="+2" />
+
+                <Button
+                    android:id="@+id/id_home__plus_three_text_view"
+                    style="@style/PlusButton"
+                    android:text="+3" />
+            </TableRow>
+        </TableLayout>
+    </TableRow>
+
+    <!--=============== SECOND COLUMN ===============-->
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/grey_300"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <TableLayout style="@style/PointsTableLayout">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/id_away__plus_one_text_view"
+                    style="@style/PlusButton"
+                    android:layout_marginRight="1dp"
+                    android:text="+1" />
+
+                <Button
+                    android:id="@+id/id_away__plus_two_text_view"
+                    style="@style/PlusButton"
+                    android:layout_marginRight="1dp"
+                    android:text="+2" />
+
+                <Button
+                    android:id="@+id/id_away__plus_three_text_view"
+                    style="@style/PlusButton"
+                    android:text="+3" />
+            </TableRow>
+        </TableLayout>
+    </TableRow>
+</TableRow>

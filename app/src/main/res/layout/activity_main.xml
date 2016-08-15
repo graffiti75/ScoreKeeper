@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+
+    <include layout="@layout/activity_main__teams" />
+
+    <include layout="@layout/activity_main__score" />
+
+    <include layout="@layout/activity_main__points" />
+
+    <Button
+        android:id="@+id/id_reset_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/grey_700"
+        android:text="@string/reset"
+        android:textColor="@color/white"
+        android:textSize="28sp" />
+</TableLayout>
